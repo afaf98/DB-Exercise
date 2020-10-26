@@ -31,3 +31,19 @@ Command : ` $ npx sequelize-cli db:migrate:undo:all`
 Than replace everything
 --> `$ npx sequelize-cli db:migrate`
 --> `$ npx sequelize-cli db:seed:all`
+
+[x]Creating new attribute for First migration
+--> first by adding the attribute in the file.js (todoItem.js)
+--> running the command to generate the migration
+--- `$ npx sequelize-cli migration:generate --name first-migration` (just to create the file where we are gonna give instruction to create a new column)
+--> define the data type of the column and where
+
+---
+
+###### Piece of code to set in the migration file
+
+` await queryInterface.addColumn( "todoItems", "important", { type: Sequelize.BOOLEAN }, {} );`
+
+---
+
+---> Than migrate --> Command : 'npx sequelize-cli db:migrate'
