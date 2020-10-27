@@ -1,6 +1,5 @@
 const User = require("./models").user;
 const ToDoItems = require("./models").todoItem;
-const { Op } = require("sequelize");
 
 async function queries() {
   try {
@@ -22,4 +21,27 @@ async function queries() {
     console.log(error);
   }
 }
-queries();
+// queries();
+
+async function createNewUser(name, email, phone, password) {
+  try {
+    const newUser = await User.create(name, email, phone, password);
+    return console.log(newUser.get({ plain: true }));
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+// createNewUser("Afaf", "afaf@email.com", "1234", "1234");
+
+async function findImportantItems() {
+  try {
+    const findImportant = await ToDoItems.findAll({
+      where: { important: true },
+    });
+    return console.log(findImportant.map((item) => item.get({ plain: true })));
+  } catch (error) {
+    console.log(error);
+  }
+}
+findImportantItems();
