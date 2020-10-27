@@ -15,6 +15,9 @@
 -> Define corresponding configs for your config.json
 -> check that the development server is properly connected
 -> `npx sequelize-cli db:migrate`
+-> command to Start QueryPie
+➜ `npx chmod a+x QueryPie-6.2.0.AppImage`
+➜ `./QueryPie*.AppImage`
 
 ---
 
