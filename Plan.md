@@ -5,7 +5,7 @@
 ## [x]inizialize npm
 
 [x]inizialize sequelize, sequelize-cli, postgres (pg)
--> Commands -> `npx i sequelize sequelize-cli pg`
+-> Commands -> `npm i sequelize sequelize-cli pg`
 
 ---
 
