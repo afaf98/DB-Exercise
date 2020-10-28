@@ -7,11 +7,13 @@ module.exports = {
       [
         {
           name: "Dummy data",
+          userId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
           name: "Other Dummy data",
+          userId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
