@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   itemTag.init(
     {
-      todoItem: DataTypes.INTEGER,
+      todoItemId: DataTypes.INTEGER,
       tagId: DataTypes.INTEGER,
     },
     {

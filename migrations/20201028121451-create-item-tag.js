@@ -8,7 +8,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      todoItem: {
+      todoItemId: {
         type: Sequelize.INTEGER,
         references: {
           model: "todoItems",
